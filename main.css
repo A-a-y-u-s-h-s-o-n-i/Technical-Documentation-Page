@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-weight: 300;
+    font-family:'Montserrat',sans-serif ;
+}
+
+#main-doc{
+    width: 100%;
+    height: 100%;
+}
+
+/*Navigation Section*/
+#React_Doc_Page{
+    top: 0;
+    margin: 0;
+    position: fixed;
+    width: 250px;
+    background-color: #fae7b5;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.header{
+    text-align: center;
+    font-size: 2em;
+}
+#React_Doc_Page_Doc_Page .navbar-brand{
+    font-size: 1.5em;
+}
+
+#React_Doc_Page_Doc_Page ul{
+    justify-content: space-around;
+    list-style: none;
+}
+#React_Doc_Page li{
+    margin: 20px 0;
+}
+#React_Doc_Page .nav-link{
+    width: 100%;
+    padding: 10px 20px;
+    color: black;
+    text-decoration:none;
+}
+
+#React_Doc_Page .nav-link:hover{
+    border: 0 solid;
+    border-radius: 5px;
+    color: black;
+    background-color: darkkhaki;
+    text-decoration:none;
+}
+
+/*Navigation End*/
+
+.container{
+    top: 0;
+    position: relative;
+    height: 100%;
+    padding: 0 10px;
+    margin-left: 280px;
+}
+.main-section{
+    margin: 10px 0;
+}
+#Intro,#ES6,#Components,#Props,#Events, #Forms, #CSS{
+    border: 0 solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#Intro,#Components,#Events,#CSS{
+    background-color: antiquewhite;
+}
+
+#ES6, #Props, #Forms{
+    background-color: gainsboro;
+}
+
+.content hr{
+    margin: 10px 20%;
+    border-radius: 5px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+}
+.content h1{
+    margin: 20px 0;
+    font-weight: 400;
+}
+
+.content p{
+    margin: 20px 0;
+}
+
+.content ul{
+    justify-content: space-around;
+}
+.content li{
+    margin:5px 20px;
+}
+
+.content code{
+    font-size: 1.2em;
+    background-color: darkkhaki;
+    padding: 2px;
+}
+
+/*Responsive*/
+@media (max-width: 768px) {
+
+    #main-doc{
+        display: flex;
+        flex-flow:wrap ;
+    }
+
+    #React_Doc_Page {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #React_Doc_Page .header{
+        font-size: 2.5em;
+    }
+
+    #React_Doc_Page .navbar-brand{
+        display: none;
+    }
+
+    #React_Doc_Page ul {
+        font-size: 0.8em;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+    #React_Doc_Page li{
+        margin: 10px 0;
+    }
+    #React_Doc_Page .nav-link {
+        text-decoration: none;
+    }
+    .nav-link:hover{
+        background-color: #fae7b5;
+    }
+
+    .container{
+        margin: 0;
+    }
+}

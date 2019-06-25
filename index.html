@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Documentation Page</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="React_Doc_Page">
+            <header class="header">React Doc Page</header>
+            <nav id="navbar">
+                <header class="navbar-brand">React</header>
+                <ul>
+                    <li><a class="nav-link" href="#main-doc">React Doc Page</a></li>
+                    <li><a class="nav-link" href="#Intro">Intro</a></li>
+                    <li><a class="nav-link" href="#ES6">ES6</a></li>
+                    <li><a class="nav-link" href="#Components">Components</a></li>
+                    <li><a class="nav-link" href="#Props">Props</a></li>
+                    <li><a class="nav-link" href="#Events">Events</a></li>
+                    <li><a class="nav-link" href="#Forms">Forms</a></li>
+                    <li><a class="nav-link" href="#CSS">CSS</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="container">
+
+            <section class="main-section" id="Intro">
+                <header class="header">Intro</header>
+                <div class="content">
+                    <h1>What is React?</h1>
+
+                    <p>React is a JavaScript library created by Facebook.</p>
+                    <p>React is a tool for building UI components.</p>
+
+                    <hr>
+                    <h1>How does React Work?</h1>
+
+                    <code>React creates a VIRTUAL DOM in memory.</code>
+
+                    <p>Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory,
+                        where it does all the necessary manipulating, before making the changes in the browser DOM.</p>
+
+                    <code>React only changes what needs to be changed!</code>
+
+                    <p>React finds out what changes have been made, and changes <strong>only</strong> what needs to be changed.</p>
+
+                </div>
+
+            </section>
+
+            <section class="main-section" id="ES6">
+                <header class="header">ES6</header>
+                <div class="content">
+                    <h1>What is ES6?</h1>
+
+                    <p>ES6 stands for ECMAScript 6.</p>
+                    <p>ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in 2015,
+                        and is also known as ECMAScript 2015.</p>
+
+                    <hr>
+
+                    <h1>Why Should I Learn ES6?</h1>
+                    <p>React uses ES6, and you should be familiar with some of the new features like:</p>
+                    <ul>
+                        <li>Classes</li>
+                        <li>Arrow Functions</li>
+                        <li>Variables (let, const, var)</li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="main-section" id="Components">
+                <header class="header">Components</header>
+                <div class="content">
+                    <h1>React Components</h1>
+                    <p>Components are like functions that returns HTML elements.</p>
+                    <p>Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and returns HTML via a render function.</p>
+                    <p>Components come in two types, Class components and Function components, in this tutorial we will concentrate on Class components.</p>
+
+                    <hr>
+                    <h1>Create a Class Component</h1>
+                    <p>The component has to include the <strong>extend React.Component</strong> statement, this statement creates an inheritance to React.Component, and gives your component access to React.Component's functions.</p>
+                    <p>The component also requires a <strong>render()</strong> method, this method returns HTML.</p>
+                </div>
+            </section>
+
+            <section class="main-section" id="Props">
+                <header class="header">Props</header>
+                <div class="content">
+                    <h1>React Props</h1>
+                    <p>Props are arguments passed into React components.</p>
+                    <p>Props are passed to components via HTML attributes.</p>
+                    <p>React Props are like function arguments in JavaScript and attributes in HTML.</p>
+                    <p>To send props into a component, use the same syntax as HTML attributes:</p>
+
+                    <hr>
+                    <h1>Example</h1>
+                    <code>const myelement = &lt;Car brand="Ford"&gt;&lt;/Car&gt;</code>
+
+                    <p><strong>Note: </strong><em>React Props are read-only! You will get an error if you try to change their value.</em></p>
+
+                </div>
+            </section>
+
+            <section class="main-section" id="Events">
+                <header class="header">Events</header>
+                <div class="content">
+                    <h1>React Events</h1>
+                    <p>Just like HTML, React can perform actions based on user events.</p>
+                    <p>React has the same events as HTML: click, change, mouseover etc.</p>
+
+                    <hr>
+                    <h1>Adding Events</h1>
+                    <p>React events are written in camelCase syntax:</p>
+                    <code><em>onClick</em> instead of <em>onclick</em></code>
+
+                    <p>React event handlers are written inside curly braces:</p>
+                    <code>onClick={shoot}</code>  instead of <code>onClick="shoot()"</code>
+
+                    <p>Event handlers have access to the React event that triggered the function.</p>
+
+                </div>
+            </section>
+
+            <section class="main-section" id="Forms">
+                <header class="header">Forms</header>
+                <div class="content">
+                    <h1>React Forms</h1>
+                    <p>Just like in HTML, React uses forms to allow users to interact with the web page.</p>
+
+                    <hr>
+                    <h1>Adding Forms in React</h1>
+                    <p>You add a form with React like any other element:</p>
+                    <code>
+                        class MyForm extends React.Component {<br>
+                        render() {<br>
+                        return (<br>
+                        &lt;form&gt;<br>
+                            &lt;h1&gt;Hello&lt;/h1&gt;<br>
+                            &lt;p&gt;Enter your name:&lt;/p&gt;<br>
+                            &lt;input<br>
+                                    type="text"<br>
+                            /&gt;<br>
+                        &gt;/form&gt;<br>
+                        );<br>
+                        }<br>
+                        }<br>
+                        ReactDOM.render(&lt;MyForm /&gt;, document.getElementById('root'));<br>
+                    </code>
+                </div>
+            </section>
+
+            <section class="main-section" id="CSS">
+                <header class="header">CSS</header>
+                <div class="content">
+                    <h1>Styling React Using CSS</h1>
+                    <p>There are many ways to style React with CSS, this tutorial will take a closer look at <strong>inline styling</strong>, and <strong>CSS stylesheet</strong>.</p>
+
+                    <hr>
+                    <h1>Inline Styling</h1>
+                    <p>To style an element with the inline style attribute, the value must be a JavaScript object:</p>
+                    <code><strong>Note:</strong>In JSX, JavaScript expressions are written inside curly braces, and since JavaScript objects also use curly braces,
+                        the styling in the example above is written inside two sets of curly braces {{}}.</code>
+
+                    <h1>camelCased Property Names</h1>
+                    <p>Since the inline CSS is written in a JavaScript object, properties with two names, like background-color, must be written with camel case</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+</body>
+</html>
